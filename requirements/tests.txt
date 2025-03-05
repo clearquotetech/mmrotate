@@ -1,5 +1,5 @@
 asynctest
-codecov
+#codecov==2.1.12
 coverage
 cython
 e2cnn
@@ -10,7 +10,8 @@ isort==4.3.21
 kwarray
 matplotlib
 pytest
-sklearn
+#sklearn
+scikit-learn
 ubelt
 wheel
 xdoctest>=0.10.0

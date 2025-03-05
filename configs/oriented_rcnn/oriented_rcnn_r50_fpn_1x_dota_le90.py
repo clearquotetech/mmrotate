@@ -56,7 +56,7 @@ model = dict(
             in_channels=256,
             fc_out_channels=1024,
             roi_feat_size=7,
-            num_classes=15,
+            num_classes=2,
             bbox_coder=dict(
                 type='DeltaXYWHAOBBoxCoder',
                 angle_range=angle_version,
@@ -127,10 +127,10 @@ img_norm_cfg = dict(
 train_pipeline = [
     dict(type='LoadImageFromFile'),
     dict(type='LoadAnnotations', with_bbox=True),
-    dict(type='RResize', img_scale=(1024, 1024)),
+    dict(type='RResize', img_scale=(512, 512)),
     dict(
         type='RRandomFlip',
-        flip_ratio=[0.25, 0.25, 0.25],
+        flip_ratio=[0.0, 0.0, 0.0],
         direction=['horizontal', 'vertical', 'diagonal'],
         version=angle_version),
     dict(type='Normalize', **img_norm_cfg),
