@@ -1,2 +1,2 @@
-This repo is cloned inside OCR container.
-The actual origin of this repo is: "https://github.com/open-mmlab/mmrotate.git"
+DO NOT DELETE THIS REPO. Its being used by the OCR container.
+The actual origin of this repo is: "https://github.com/open-mmlab/mmrotate.git" (v0.3.2)
